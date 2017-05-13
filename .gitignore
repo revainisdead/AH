@@ -1,1 +1,7 @@
-*.pyc
+*.py[co]
+__pycache__/
+dist/
+build/
+
+# the automatically generated one
+MANIFEST

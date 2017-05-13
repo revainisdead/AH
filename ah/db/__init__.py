@@ -1,8 +1,3 @@
-# Goal: let app run in any directory
-#
-# set BASE_DIR = "current directory"
-# os.getcwd = setup
-
 
 
 class DBManager:

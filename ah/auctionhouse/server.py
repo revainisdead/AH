@@ -1,12 +1,12 @@
-import src.db.db
+from ah.db import DBManager
 
-import client
+from ah.auctionhouse.client import AHClient
 
 
 class AHServer:
     def __init__(self, host):
         self.host = host
-        self.db = src.db.db.DBManager()
+        self.db = DBManager()
 
 
     def run():
@@ -20,10 +20,10 @@ class AHServer:
 
 
 def main():
-    # manage server
-    ah = AHServer("localhost")
+    print("Creating AH server . . .")
+    server = AHServer("localhost")
 
-    ahc = client.AHClient()
+    client = AHClient()
 
     # test db
 

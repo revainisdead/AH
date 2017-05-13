@@ -1,0 +1,4 @@
+Installing requires python 3.4 or greater.
+To install, use:
+
+    python3 setup.py install
