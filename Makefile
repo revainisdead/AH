@@ -3,7 +3,7 @@
 TMPRUN=ah/auctionhouse
 
 all:
-	python3 $(TMPRUN)/server.py /home/christian/AH/ah
+	python3 $(TMPRUN)/server.py
 
 clean:
 	find . -name "*.pyc" -exec rm --force {} +

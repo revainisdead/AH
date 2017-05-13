@@ -25,7 +25,6 @@ def main():
 
     client = AHClient()
 
-    # test db
 
 
 if __name__ == "__main__":
