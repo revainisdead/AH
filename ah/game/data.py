@@ -1,6 +1,6 @@
 import random
 
-from game.constants import Stats
+import game.constants as c
 
 
 class BaseItem:
@@ -8,7 +8,7 @@ class BaseItem:
         # Every item is defined and should be unique
         self.name = name
 
-        self.level = game.constants.MAX_LEVEL
+        self.level = game.c.MAX_LEVEL
         self.rarity = self.random_rarity()
         # Generate stats once on creation, dependent on rarity
         self.stats = generate_stats()
@@ -16,9 +16,9 @@ class BaseItem:
 
     def generate_stats(rarity):
         return {
-            Stats.STR: __random_stat(),
-            Stats.INT: __random_stat(),
-            Stats.AGI: __random_stat(),
+            c.Stats.STR: __random_stat(),
+            c.Stats.INT: __random_stat(),
+            c.Stats.AGI: __random_stat(),
         }
 
 

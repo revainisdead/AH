@@ -1,6 +1,8 @@
 *.py[co]
 __pycache__/
+
 dist/
+*.egg-info
 build/
 
 # the automatically generated one

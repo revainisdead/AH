@@ -8,8 +8,7 @@ all:
 clean:
 	find . -name "*.pyc" -exec rm --force {} +
 	find . -name "*.pyo" -exec rm --force {} +
-
-clean-build:
+	find . -name "__pycache__" -exec rm --force --recursive {} +
 	rm -rf build/
 	rm -rf dist/
 
